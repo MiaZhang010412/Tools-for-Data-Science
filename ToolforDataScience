@@ -1,0 +1,271 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "<center>\n",
+    "    <img src=\"https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0105EN-SkillsNetwork/labs/Module2/images/SN_web_lightmode.png\" width=\"300\" alt=\"cognitiveclass.ai logo\">\n",
+    "</center>\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Add your code below following the instructions given in the course\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Tools for Data Science"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Introduction"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This notebook aims to explore and analyze a dataset using Python and its relevant libraries. The dataset will be loaded into a Pandas DataFrame for easy manipulation, and various operations will be performed on the data to provide insights and answer questions. The notebook will cover topics such as data cleaning, data visualization, hypothesis testing, and machine learning. The analysis presented in this notebook can be useful for decision-making and problem-solving in various fields such as finance, marketing, healthcare, and more."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Data Science Programming Languages"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Here are some popular programming languages used in data science:\n",
+    "\n",
+    "- **Python**: Python is one of the most widely used and versatile programming languages for data science. It has a large ecosystem of libraries and tools specifically geared towards data analysis and machine learning, such as NumPy, Pandas, and Scikit-learn.\n",
+    "\n",
+    "- **R**: R is a programming language and environment specifically designed for statistical computing and graphics. It is widely used in academia and research, particularly in fields such as biostatistics and social sciences.\n",
+    "\n",
+    "- **SQL**: SQL (Structured Query Language) is a domain-specific language used for managing and querying relational databases. It is an essential tool for data scientists working with large datasets stored in databases.\n",
+    "\n",
+    "- **Java**: Java is a general-purpose programming language that is commonly used in enterprise applications, including big data processing and distributed computing.\n",
+    "\n",
+    "- **Scala**: Scala is a programming language that combines object-oriented and functional programming paradigms. It is commonly used in big data processing and is the primary language used in Apache Spark, a popular big data processing framework.\n",
+    "\n",
+    "These are just a few examples of the many programming languages used in data science. Each language has its strengths and weaknesses, and the choice of language often depends on the specific use case and data science problem at hand."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Data Science Libraries"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Here are some popular libraries used in data science:\n",
+    "\n",
+    "- **NumPy**: A fundamental package for scientific computing in Python, providing support for arrays, matrices, and mathematical operations.\n",
+    "\n",
+    "- **Pandas**: A library that provides easy-to-use data structures and tools for data analysis in Python.\n",
+    "\n",
+    "- **Matplotlib**: A plotting library for the Python programming language and its numerical mathematics extension NumPy.\n",
+    "\n",
+    "- **Seaborn**: A data visualization library based on Matplotlib that provides a high-level interface for drawing attractive and informative statistical graphics.\n",
+    "\n",
+    "- **Scikit-learn**: A library for machine learning built on top of NumPy, SciPy, and Matplotlib that provides efficient and well-documented implementations of popular algorithms for classification, regression, and clustering.\n",
+    "\n",
+    "These are just a few examples of the many libraries used in data science. Each library has its strengths and weaknesses, and the choice of library often depends on the specific use case and data science problem at hand."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Table of Data Science tools"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "| Tool           | Description                                                   |\n",
+    "|----------------|---------------------------------------------------------------|\n",
+    "| Jupyter Notebook | A web-based interactive computational environment for creating and sharing documents that contain live code, equations, visualizations, and narrative text |\n",
+    "| Apache Spark      | A fast and general-purpose distributed computing system that provides a scalable platform for processing large datasets with complex computations |\n",
+    "| Tableau          | A business intelligence and data visualization tool that provides a range of powerful features for creating charts, graphs, dashboards, and reports |\n",
+    "| Apache Hadoop     | An open-source implementation of the MapReduce programming model for processing huge volumes of structured and unstructured data |\n",
+    "| Power BI         | A suite of business analytics tools for data exploration, visualization, and reporting that enables users to connect to a wide range of data sources |\n",
+    "| SAS              | A proprietary software suite for advanced analytics, multivariate analyses, business intelligence, and data management |\n",
+    "| RapidMiner       | An open-source data science platform for building and deploying predictive models and machine learning workflows |\n",
+    "| KNIME            | An open-source analytics platform for designing and executing data science workflows |\n",
+    "| Databricks       | A cloud-based unified analytics platform for processing big data and building AI applications using Apache Spark |"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Arithmetic Expression Examples"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Here are some examples of arithmetic expressions:\n",
+    "\n",
+    "- Addition: `2 + 2 = 4`\n",
+    "- Subtraction: `5 - 3 = 2`\n",
+    "- Multiplication: `4 * 3 = 12`\n",
+    "- Division: `10 / 2 = 5`\n",
+    "- Exponentiation: `2 ** 3 = 8`\n",
+    "\n",
+    "You can also use parentheses to group the order of operations:\n",
+    "\n",
+    "- `(2 + 3) * 4 = 20`\n",
+    "- `17 - (8 + 2) / 5 = 15.6`\n",
+    "\n",
+    "In addition to basic arithmetic operators, Python supports many other math functions through the `math` module. For example:\n",
+    "\n",
+    "- Square root: `import math; math.sqrt(9) = 3.0`\n",
+    "- Logarithm: `import math; math.log(10) = 2.302585092994046`\n",
+    "\n",
+    "You can use these arithmetic expressions and functions in your Python code to perform complex calculations and manipulate data.\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Create a code cell to multiply and add numbers."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The product of 5 and 10 is: 50\n",
+      "The sum of 15 and 20 is: 35\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Multiply two numbers\n",
+    "num1 = 5\n",
+    "num2 = 10\n",
+    "result_multiply = num1 * num2\n",
+    "print(\"The product of\", num1, \"and\", num2, \"is:\", result_multiply)\n",
+    "\n",
+    "# Add two numbers\n",
+    "num3 = 15\n",
+    "num4 = 20\n",
+    "result_add = num3 + num4\n",
+    "print(\"The sum of\", num3, \"and\", num4, \"is:\", result_add)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Create a code cell to convert minutes to hours"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "90 minutes is equal to 1.5 hours\n"
+     ]
+    }
+   ],
+   "source": [
+    "minutes = 90\n",
+    "hours = minutes / 60\n",
+    "print(minutes, \"minutes is equal to\", hours, \"hours\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Insert a markdown cell to list Objectives"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "The objectives of this notebook are to:\n",
+    "\n",
+    "- Introduce the basics of Python programming language\n",
+    "- Cover the fundamental data types, operators, and control structures in Python\n",
+    "- Demonstrate how to create functions, classes, and modules in Python\n",
+    "- Explore how to use popular Python libraries for data analysis, such as NumPy and Pandas\n",
+    "- Provide hands-on experience with real-world data sets and data science projects\n",
+    "\n",
+    "By the end of this notebook, you should have a solid understanding of the fundamentals of programming in Python and be able to work with data using popular data science libraries."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Author"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This notebook was created by [Your Name Here]. "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python",
+   "language": "python",
+   "name": "conda-env-python-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
